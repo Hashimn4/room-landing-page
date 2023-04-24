@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: ;
+}
+
+.header {
+    width: 100%;
+    height: 15vh;
+    padding: 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.nav__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.nav__secondary {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    padding: 0 15px;
+    top: 0;
+    align-items: center;
+    background-color: white;
+    transition: 1s ease-in-out;
+    display: none;
+}
+
+.nav__secondary--active {
+    /* transition: 1s ease-in-out;
+    transform: translateX(0); */
+}
+
+.nav__secondary-links {
+    display: flex;
+    width: 275px;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    top: 0;
+    width: 100%;
+    
+}
+
+.hero__image-1 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    
+}
+
+.hero__image-1 img {
+    width: 100%;
+    object-fit: cover;
+  
+}
+
+.arrows {
+    background-color: black;
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    right: 0;
+    
+}
+
+.arrows__left, .arrows__right {
+    padding: 20px;
+}
+
+.cta {
+    position: relative;
+    top: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 50px 30px 70px 30px;
+}
+
+.cta__headline {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cta__info {
+    line-height: 1.3rem;
+}
+
+.cta__link {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.cta__link p {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.dark-image {
+    position: relative;
+    top: 280px;
+    
+}
+
+.dark-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.furniture {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 280px;
+    padding: 40px 30px;
+}
+
+.furniture__headline {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.furniture__info {
+    line-height: 1.3rem;
+}
+
+.light-image {
+    position: relative;
+    top: 280px;
+}
+
+.light-image img {
+    width: 100%;
+    object-fit: cover;
+}
