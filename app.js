@@ -4,8 +4,8 @@ let linkMenu = document.getElementsByClassName("nav__secondary");
 let closeButton = document.getElementsByClassName("nav__secondary-close");
 let container = document.querySelector(".slider");
 let slides = document.getElementsByClassName("slider__slide");
-let rightArrow = document.querySelector(".arrows__right");
-let leftArrow = document.querySelector(".arrows__left");
+let rightArrow = document.querySelectorAll(".arrows__right");
+let leftArrow = document.querySelectorAll(".arrows__left");
 let current = 0;
 
 menuIcon[0].addEventListener("click", () => {
@@ -18,14 +18,14 @@ closeButton[0].addEventListener("click", () => {
 
 slides[current].classList.add("slider__slide--active");
 
-rightArrow.addEventListener("click", () => {
+rightArrow.forEach(e => e.addEventListener("click", () => {
     nextSlide(current + 1);
     
-});
+}));
 
-leftArrow.addEventListener("click", () => {
+leftArrow.forEach(e => e.addEventListener("click", () => {
     nextSlide(current - 1);
-})
+}));
 
 function nextSlide(index) {
     if(index >= slides.length) {
